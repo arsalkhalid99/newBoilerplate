@@ -1,7 +1,9 @@
 import React from "react";
 import logo from './logo.svg';
+import { Link } from 'react-router-dom'
 import './App.css';
 import "./scss/style.scss";
+import Main from "./components/Main";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+      <Main />
       </header>
     </div>
   );
