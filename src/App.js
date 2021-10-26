@@ -2,7 +2,7 @@ import React ,{useEffect} from "react";
 import logo from './logo.svg';
 import './App.css';
 import "./scss/style.scss";
-import Main from './components/Main'
+// import Main from './components/Main'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -24,7 +24,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p className=''>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reloads.
         </p>
         <a
           className="App-link"
@@ -36,7 +36,7 @@ function App() {
         </a>
         <FontAwesomeIcon icon={['fas', 'angle-right']} />
         <FontAwesomeIcon icon={['fab', 'apple']} size="lg" />
-        <Main />
+        {/* <Main /> */}
       </header>
     </div>
   );
