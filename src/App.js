@@ -1,6 +1,9 @@
 import React ,{useEffect} from "react";
 // import * as React  from 'react';
-// import TextField from '@mui/material/TextField';
+import TextField from '@mui/material/TextField';
+import { alpha, styled } from '@mui/material/styles';
+import { pink } from '@mui/material/colors';
+import Switch from '@mui/material/Switch';
 import logo from './logo.svg';
 import './App.css';
 import "./scss/style.scss";
@@ -13,6 +16,19 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 
 library.add(fab,fas,far)
 
+const GreenSwitch = styled(Switch)(({ theme }) => ({
+  '& .MuiSwitch-switchBase.Mui-checked': {
+    color: pink[600],
+    '&:hover': {
+      backgroundColor: alpha(pink[600], theme.palette.action.hoverOpacity),
+    },
+  },
+  '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+    backgroundColor: pink[600],
+  },
+}));
+
+const label = { inputProps: { 'aria-label': 'Switch demo' } }
 function App() {
   useEffect(()=>{
     const gsap = window.gsap;
@@ -52,7 +68,8 @@ function App() {
         </a>
         <FontAwesomeIcon icon={['fas', 'angle-right']} />
         <FontAwesomeIcon icon={['fab', 'apple']} size="lg" />
-        {/* <TextField error id="outlined-basic" label="Outlined" variant="outlined" /> */}
+        <TextField error id="outlined-basic" label="Outlined" variant="outlined" />
+        <Switch {...label} defaultChecked color="secondary" />
         <div className="wrapper-no4">
           <button className="button-bird">
               <p className="button-bird__text">SEND</p>
