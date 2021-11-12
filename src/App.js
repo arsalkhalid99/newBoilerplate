@@ -3,13 +3,14 @@ import React ,{useEffect} from "react";
 import logo from './logo.svg';
 import './App.css';
 import "./scss/style.scss";
-// import Main from './components/Main'
+import Main from './components/Main'
 import Uikit from "./components/Uikit";
 
 
 
 function App() {
   return (
+    <>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -24,10 +25,11 @@ function App() {
         >
           Learn React
         </a>
-        {/* <Main /> */}
+        <Main />
         {/* <Uikit /> */}
       </header>
     </div>
+    </>
   );
 }
 

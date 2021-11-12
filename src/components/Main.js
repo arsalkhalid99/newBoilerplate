@@ -2,16 +2,17 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import App from '../App';
 import About from "./About";
+import Uikit from './Uikit';
 
 export default function Main() {
     return (
-        <>
+        <div>
             <Router>
                 <Switch>
-                    <Route path="/" exact component={App} />
-                    <Route path="/about"  component={About} />
+                    <Route path="/ui" exact component={Uikit} />
+                    <Route path="/about" exact  component={About} />
                 </Switch>
             </Router>
-        </>
+        </div>
     )
 }
