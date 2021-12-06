@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\kuwaitnet"
+		},
+		{
+			"path": "..\\..\\..\\kn2019"
+		},
+		{
+			"path": "..\\..\\..\\ensan"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

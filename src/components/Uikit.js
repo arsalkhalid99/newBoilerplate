@@ -1,5 +1,5 @@
 import React ,{useEffect} from "react";
-import '../scss/style.scss'
+import '../assets/scss/styles.scss'
 import TextField from '@mui/material/TextField';
 import { alpha, styled } from '@mui/material/styles';
 import { pink } from '@mui/material/colors';
